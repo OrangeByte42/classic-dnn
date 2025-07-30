@@ -1,0 +1,132 @@
+W0711 06:50:50.637726 3311446 torch/distributed/run.py:766] 
+W0711 06:50:50.637726 3311446 torch/distributed/run.py:766] *****************************************
+W0711 06:50:50.637726 3311446 torch/distributed/run.py:766] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0711 06:50:50.637726 3311446 torch/distributed/run.py:766] *****************************************
+torch cuda available: True
+torch cuda available: True
+torch cuda available: True
+torch cuda available: True
+/home/ubuntu/MyFiles/d2l/.venv/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+/home/ubuntu/MyFiles/d2l/.venv/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank1]:[W711 06:50:54.033130514 ProcessGroupNCCL.cpp:4718] [PG ID 0 PG GUID 0 Rank 1]  using GPU 1 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can pecify device_id in init_process_group() to force use of a particular device.
+/home/ubuntu/MyFiles/d2l/.venv/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank3]:[W711 06:50:54.065489989 ProcessGroupNCCL.cpp:4718] [PG ID 0 PG GUID 0 Rank 3]  using GPU 3 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can pecify device_id in init_process_group() to force use of a particular device.
+/home/ubuntu/MyFiles/d2l/.venv/lib/python3.9/site-packages/torch/distributed/distributed_c10d.py:4631: UserWarning: No device id is provided via `init_process_group` or `barrier `. Using the current device set by the user. 
+  warnings.warn(  # warn only once
+[rank2]:[W711 06:50:54.075090869 ProcessGroupNCCL.cpp:4718] [PG ID 0 PG GUID 0 Rank 2]  using GPU 2 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can pecify device_id in init_process_group() to force use of a particular device.
+[rank0]:[W711 06:50:54.103862198 ProcessGroupNCCL.cpp:4718] [PG ID 0 PG GUID 0 Rank 0]  using GPU 0 as device used by this process is currently unknown. This can potentially cause a hang if this rank to GPU mapping is incorrect. You can pecify device_id in init_process_group() to force use of a particular device.
+Rank 1 loaded data with 60000 training samples and 10000 test samples.
+Rank 3 loaded data with 60000 training samples and 10000 test samples.
+Rank 0 loaded data with 60000 training samples and 10000 test samples.
+Rank 2 loaded data with 60000 training samples and 10000 test samples.
+Epoch 001/100, Train Loss: 2.2982, Train Accuracy: 0.2860, Test Accuracy: 0.5141
+Epoch 002/100, Train Loss: 2.2704, Train Accuracy: 0.4425, Test Accuracy: 0.5029
+Epoch 003/100, Train Loss: 1.2031, Train Accuracy: 0.5898, Test Accuracy: 0.6966
+Epoch 004/100, Train Loss: 0.6943, Train Accuracy: 0.7405, Test Accuracy: 0.7866
+Epoch 005/100, Train Loss: 0.5547, Train Accuracy: 0.7953, Test Accuracy: 0.7662
+Epoch 006/100, Train Loss: 0.4796, Train Accuracy: 0.8253, Test Accuracy: 0.8190
+Epoch 007/100, Train Loss: 0.4374, Train Accuracy: 0.8399, Test Accuracy: 0.8413
+Epoch 008/100, Train Loss: 0.4047, Train Accuracy: 0.8527, Test Accuracy: 0.8509
+Epoch 009/100, Train Loss: 0.3828, Train Accuracy: 0.8586, Test Accuracy: 0.8591
+Epoch 010/100, Train Loss: 0.3617, Train Accuracy: 0.8666, Test Accuracy: 0.8646
+Epoch 011/100, Train Loss: 0.3476, Train Accuracy: 0.8719, Test Accuracy: 0.8761
+Epoch 012/100, Train Loss: 0.3307, Train Accuracy: 0.8783, Test Accuracy: 0.8773
+Epoch 013/100, Train Loss: 0.3213, Train Accuracy: 0.8820, Test Accuracy: 0.8742
+Epoch 014/100, Train Loss: 0.3118, Train Accuracy: 0.8849, Test Accuracy: 0.8845
+Epoch 015/100, Train Loss: 0.2991, Train Accuracy: 0.8899, Test Accuracy: 0.8715
+Epoch 016/100, Train Loss: 0.2917, Train Accuracy: 0.8924, Test Accuracy: 0.8842
+Epoch 017/100, Train Loss: 0.2813, Train Accuracy: 0.8956, Test Accuracy: 0.8958
+Epoch 018/100, Train Loss: 0.2735, Train Accuracy: 0.8999, Test Accuracy: 0.8925
+Epoch 019/100, Train Loss: 0.2664, Train Accuracy: 0.9019, Test Accuracy: 0.8994
+Epoch 020/100, Train Loss: 0.2584, Train Accuracy: 0.9060, Test Accuracy: 0.8998
+Epoch 021/100, Train Loss: 0.2518, Train Accuracy: 0.9075, Test Accuracy: 0.8995
+Epoch 022/100, Train Loss: 0.2474, Train Accuracy: 0.9075, Test Accuracy: 0.8998
+Epoch 023/100, Train Loss: 0.2413, Train Accuracy: 0.9107, Test Accuracy: 0.8952
+Epoch 024/100, Train Loss: 0.2346, Train Accuracy: 0.9127, Test Accuracy: 0.9049
+Epoch 025/100, Train Loss: 0.2250, Train Accuracy: 0.9158, Test Accuracy: 0.8933
+Epoch 026/100, Train Loss: 0.2215, Train Accuracy: 0.9183, Test Accuracy: 0.9105
+Epoch 027/100, Train Loss: 0.2171, Train Accuracy: 0.9201, Test Accuracy: 0.9123
+Epoch 028/100, Train Loss: 0.2111, Train Accuracy: 0.9218, Test Accuracy: 0.9119
+Epoch 029/100, Train Loss: 0.2062, Train Accuracy: 0.9230, Test Accuracy: 0.9053
+Epoch 030/100, Train Loss: 0.1994, Train Accuracy: 0.9248, Test Accuracy: 0.9104
+Epoch 031/100, Train Loss: 0.1950, Train Accuracy: 0.9277, Test Accuracy: 0.9015
+Epoch 032/100, Train Loss: 0.1885, Train Accuracy: 0.9298, Test Accuracy: 0.9123
+Epoch 033/100, Train Loss: 0.1817, Train Accuracy: 0.9323, Test Accuracy: 0.8984
+Epoch 034/100, Train Loss: 0.1772, Train Accuracy: 0.9337, Test Accuracy: 0.9151
+Epoch 035/100, Train Loss: 0.1726, Train Accuracy: 0.9354, Test Accuracy: 0.9176
+Epoch 036/100, Train Loss: 0.1662, Train Accuracy: 0.9372, Test Accuracy: 0.9193
+Epoch 037/100, Train Loss: 0.1617, Train Accuracy: 0.9397, Test Accuracy: 0.9099
+Epoch 038/100, Train Loss: 0.1578, Train Accuracy: 0.9402, Test Accuracy: 0.9177
+Epoch 039/100, Train Loss: 0.1511, Train Accuracy: 0.9431, Test Accuracy: 0.9204
+Epoch 040/100, Train Loss: 0.1454, Train Accuracy: 0.9462, Test Accuracy: 0.9194
+Epoch 041/100, Train Loss: 0.1426, Train Accuracy: 0.9453, Test Accuracy: 0.9146
+Epoch 042/100, Train Loss: 0.1366, Train Accuracy: 0.9493, Test Accuracy: 0.9143
+Epoch 043/100, Train Loss: 0.1331, Train Accuracy: 0.9503, Test Accuracy: 0.9208
+Epoch 044/100, Train Loss: 0.1270, Train Accuracy: 0.9530, Test Accuracy: 0.9186
+Epoch 045/100, Train Loss: 0.1233, Train Accuracy: 0.9539, Test Accuracy: 0.9168
+Epoch 046/100, Train Loss: 0.1174, Train Accuracy: 0.9562, Test Accuracy: 0.9199
+Epoch 047/100, Train Loss: 0.1123, Train Accuracy: 0.9577, Test Accuracy: 0.9216
+Epoch 048/100, Train Loss: 0.1078, Train Accuracy: 0.9594, Test Accuracy: 0.9172
+Epoch 049/100, Train Loss: 0.1017, Train Accuracy: 0.9618, Test Accuracy: 0.9214
+Epoch 050/100, Train Loss: 0.1011, Train Accuracy: 0.9619, Test Accuracy: 0.9235
+Epoch 051/100, Train Loss: 0.0966, Train Accuracy: 0.9644, Test Accuracy: 0.9207
+Epoch 052/100, Train Loss: 0.0918, Train Accuracy: 0.9663, Test Accuracy: 0.9261
+Epoch 053/100, Train Loss: 0.0878, Train Accuracy: 0.9674, Test Accuracy: 0.9201
+Epoch 054/100, Train Loss: 0.0833, Train Accuracy: 0.9682, Test Accuracy: 0.9247
+Epoch 055/100, Train Loss: 0.0804, Train Accuracy: 0.9699, Test Accuracy: 0.9271
+Epoch 056/100, Train Loss: 0.0761, Train Accuracy: 0.9708, Test Accuracy: 0.9222
+Epoch 057/100, Train Loss: 0.0710, Train Accuracy: 0.9738, Test Accuracy: 0.9242
+Epoch 058/100, Train Loss: 0.0674, Train Accuracy: 0.9747, Test Accuracy: 0.9209
+Epoch 059/100, Train Loss: 0.0662, Train Accuracy: 0.9749, Test Accuracy: 0.9275
+Epoch 060/100, Train Loss: 0.0624, Train Accuracy: 0.9766, Test Accuracy: 0.9227
+Epoch 061/100, Train Loss: 0.0610, Train Accuracy: 0.9776, Test Accuracy: 0.9229
+Epoch 062/100, Train Loss: 0.0581, Train Accuracy: 0.9787, Test Accuracy: 0.9161
+Epoch 063/100, Train Loss: 0.0531, Train Accuracy: 0.9811, Test Accuracy: 0.9275
+Epoch 064/100, Train Loss: 0.0526, Train Accuracy: 0.9802, Test Accuracy: 0.9253
+Epoch 065/100, Train Loss: 0.0486, Train Accuracy: 0.9816, Test Accuracy: 0.9210
+Epoch 066/100, Train Loss: 0.0474, Train Accuracy: 0.9823, Test Accuracy: 0.9181
+Epoch 067/100, Train Loss: 0.0451, Train Accuracy: 0.9831, Test Accuracy: 0.9229
+Epoch 068/100, Train Loss: 0.0441, Train Accuracy: 0.9842, Test Accuracy: 0.9240
+Epoch 069/100, Train Loss: 0.0419, Train Accuracy: 0.9849, Test Accuracy: 0.9249
+Epoch 070/100, Train Loss: 0.0391, Train Accuracy: 0.9856, Test Accuracy: 0.9299
+Epoch 071/100, Train Loss: 0.0379, Train Accuracy: 0.9857, Test Accuracy: 0.9222
+Epoch 072/100, Train Loss: 0.0365, Train Accuracy: 0.9871, Test Accuracy: 0.9271
+Epoch 073/100, Train Loss: 0.0341, Train Accuracy: 0.9873, Test Accuracy: 0.9243
+Epoch 074/100, Train Loss: 0.0319, Train Accuracy: 0.9883, Test Accuracy: 0.9281
+Epoch 075/100, Train Loss: 0.0322, Train Accuracy: 0.9880, Test Accuracy: 0.9287
+Epoch 076/100, Train Loss: 0.0293, Train Accuracy: 0.9891, Test Accuracy: 0.9272
+Epoch 077/100, Train Loss: 0.0303, Train Accuracy: 0.9889, Test Accuracy: 0.9290
+Epoch 078/100, Train Loss: 0.0276, Train Accuracy: 0.9900, Test Accuracy: 0.9299
+Epoch 079/100, Train Loss: 0.0257, Train Accuracy: 0.9908, Test Accuracy: 0.9250
+Epoch 080/100, Train Loss: 0.0269, Train Accuracy: 0.9902, Test Accuracy: 0.9299
+Epoch 081/100, Train Loss: 0.0229, Train Accuracy: 0.9916, Test Accuracy: 0.9288
+Epoch 082/100, Train Loss: 0.0224, Train Accuracy: 0.9921, Test Accuracy: 0.9296
+Epoch 083/100, Train Loss: 0.0229, Train Accuracy: 0.9914, Test Accuracy: 0.9284
+Epoch 084/100, Train Loss: 0.0238, Train Accuracy: 0.9911, Test Accuracy: 0.9280
+Epoch 085/100, Train Loss: 0.0212, Train Accuracy: 0.9926, Test Accuracy: 0.9302
+Epoch 086/100, Train Loss: 0.0217, Train Accuracy: 0.9926, Test Accuracy: 0.9303
+Epoch 087/100, Train Loss: 0.0200, Train Accuracy: 0.9928, Test Accuracy: 0.9308
+Epoch 088/100, Train Loss: 0.0186, Train Accuracy: 0.9930, Test Accuracy: 0.9281
+Epoch 089/100, Train Loss: 0.0180, Train Accuracy: 0.9935, Test Accuracy: 0.9293
+Epoch 090/100, Train Loss: 0.0176, Train Accuracy: 0.9937, Test Accuracy: 0.9267
+Epoch 091/100, Train Loss: 0.0176, Train Accuracy: 0.9935, Test Accuracy: 0.9307
+Epoch 092/100, Train Loss: 0.0176, Train Accuracy: 0.9936, Test Accuracy: 0.9285
+Epoch 093/100, Train Loss: 0.0152, Train Accuracy: 0.9947, Test Accuracy: 0.9267
+Epoch 094/100, Train Loss: 0.0165, Train Accuracy: 0.9941, Test Accuracy: 0.9284
+Epoch 095/100, Train Loss: 0.0160, Train Accuracy: 0.9941, Test Accuracy: 0.9300
+Epoch 096/100, Train Loss: 0.0148, Train Accuracy: 0.9947, Test Accuracy: 0.9280
+Epoch 097/100, Train Loss: 0.0146, Train Accuracy: 0.9948, Test Accuracy: 0.9266
+Epoch 098/100, Train Loss: 0.0149, Train Accuracy: 0.9946, Test Accuracy: 0.9287
+Epoch 099/100, Train Loss: 0.0131, Train Accuracy: 0.9956, Test Accuracy: 0.9297
+Epoch 100/100, Train Loss: 0.0119, Train Accuracy: 0.9955, Test Accuracy: 0.9242
+Distributed environment cleaned up.
+CUDA memory cache cleared.
+Distributed environment cleaned up.
+CUDA memory cache cleared.
+Distributed environment cleaned up.
+CUDA memory cache cleared.
+Distributed environment cleaned up.
+CUDA memory cache cleared.
