@@ -1,0 +1,10 @@
+.venv/
+.vscode/
+
+data/*
+
+**/checkpoints
+**/__pycache__
+
+
+
